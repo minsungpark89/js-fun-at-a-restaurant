@@ -26,6 +26,7 @@ inStock = 20 * 2;
 // Use a built in math operator to decrement the inStock count by 1.
 
 inStock -= 1;
+// inStock = inStock - 1;
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
@@ -37,13 +38,8 @@ var isFavorite = true;
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-function shouldOrderMore(instock) {
-  if(instock <= 20) {
-    console.log(true);
-  } else {
-    console.log(false);
-  }
-}
+var shouldOrderMore = inStock < 20;
+console.log(shouldOrderMore)
 //------------------------- Conditionals -------------------------//
 
 
