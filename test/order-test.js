@@ -181,7 +181,7 @@ describe("order.js", function() {
         orderType: "delivery",
         status: "accepted"
       };
-
+      
       var deliveryOrders = [order1, order2, order3];
 
       refundOrder(2893, deliveryOrders);

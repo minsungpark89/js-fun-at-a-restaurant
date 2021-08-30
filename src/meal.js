@@ -11,26 +11,26 @@ function createMenuItem(name, price, type) {
   };
 }
 
-
-function addIngredients(ingredient, ingredients) {
-  for (var i = 0; i < ingredient.length; i++) {
-    if (ingredients[i] === ingredient) {
+function addIngredients(addIngredient, ingredients) {
+  for (var i = 0; i < ingredients.length; i++) {
+    if (ingredients[i] === addIngredient) {
       return;
     }
   }
-  ingredients.push(ingredient);
+  ingredients.push(addIngredient);
 }
-
+//   if (!ingredients.includes(addIngredient)) {
+//     ingredients.push(addIngredient) 
+//   }
+// }
 
 function formatPrice(price) {
   return `$${price}`;
 }
 
-
 function decreasePrice(price) {
-    return price - (price * 0.1);
+    return price * .9;
 }
-
 
 function createRecipe(menuTitle, ingredients, menuItemType) {
   return {
@@ -39,7 +39,6 @@ function createRecipe(menuTitle, ingredients, menuItemType) {
     type: menuItemType
   };
 }
-
 
 module.exports = {
   nameMenuItem,
